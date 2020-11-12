@@ -1,0 +1,123 @@
+body {
+    background-color: #e6ffff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+
+.logo {
+    border: solid 2px black;
+    height: 5em;
+    position: fixed;
+    left: 2.5%;
+}
+
+.title {
+    align-self: center;
+    font-size: 40px;
+}
+
+
+.content {
+    display: flex;
+}
+
+
+.location__image {
+    height: 10em;
+}
+
+
+.container--left {
+    flex: 5;
+}
+
+
+.container--left article {
+    margin-bottom: 25px;
+}
+
+.fishList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.fish {
+    border: double 3.5px #1ac6ff;
+    background-color: #ffffff;
+}
+
+.fish__name {
+    font-family: 'Indie Flower', cursive;
+    font-size: 21px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.quotes {
+    font-family: 'Indie Flower', cursive;
+    font-size: 21px;
+}
+
+.quote {
+    margin: 30px;
+    text-align: center;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.location {
+    background-color: #ffffff;
+    border: double 3.5px #1ac6ff;
+    flex: 2; 
+    justify-content: space-evenly;
+    margin: 25px;
+}
+
+
+.location__image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+.location__name {
+    font-family: 'Indie Flower', cursive;
+    font-size: 21px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+.location__url {
+padding-top: 20px;
+}
+
+
+.container--right {
+    display: flex;
+    flex: 1.5;
+}
+
+.tankTips {
+    border: double 3.5px #1ac6ff;
+}
+
+.tankTips__title {
+    text-align: center;
+}
+
+.tip {
+    margin: 20px 10px;
+}
+
