@@ -5,7 +5,7 @@ const fishCollection = [
         length: 14,
         location: "Gulf of Mexico",
         food: "crustaceans", 
-        image: ""
+        image: "spotted_seatrout.jpg"
         
     },
 
