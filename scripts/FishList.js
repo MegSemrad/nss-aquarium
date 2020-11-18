@@ -1,32 +1,23 @@
-// STEP 6
-// Fish List Component 
-
-
-// Below code and comment form chapter 10
 /**
  *  FishList which renders individual fish objects as HTML
  */
 
-// TODO: Import `useFish` from the data provider module
-import { useFish } from './FishDataProvider.js'
-import { Fish } from './Fish.js'
-export const FishList = () => {
 
-    // Get a reference to the `<article class="content">` element
+import { useFish } from './FishDataProvider.js'
+import { Fish } from "./Fish.js"
+export const FishList = () => {
+    
+    // Put class from `<article class=".fishList">` element in the index.html file and insert below
     const contentElement = document.querySelector(".fishList")
     const fishes = useFish()
 
     let fishHTMLrepresentation = ""
     for (const fish of fishes) {
         console.log(fish)
-        const fishHTML = Fish(fish) 
-
-
+        const fishHTML = Fish(fish)
+  
+        // Add to the existing HTML in the content element
         contentElement.innerHTML += fishHTML
-        // <article class="fishList">
-        //     ${fishHTMLrepresentation}
-        // </article>
-    }
 }
 
-// For STEP 7
+}

@@ -1,11 +1,3 @@
-// "Defining Components - there are 2 components to this process"
-// 1. "Individual fish - create HTML representation of each fish to be rendered in the list container"
-// 2. "List of fish - create HTLM container element & have instructions for rendering the individual fish components for each fish in the collection"
-// Because "components have different responsibilities, then each one must eb created in its own module"
-
-// STEP 4
-// Single fish component will be handled in the Fish.js file 
-
 /**
  *  Fish which renders individual fish objects as HTML
  */
@@ -21,7 +13,3 @@ export const Fish = (fish) => {
         </section>
     `
 }
-
-// But this modules purpose is to only define what can happen so go to main.js again for STEP 5
-
-// Now go to FishList.js for next step
