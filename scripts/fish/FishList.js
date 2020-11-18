@@ -11,7 +11,7 @@ export const FishList = () => {
     const contentElement = document.querySelector(".fishList")
     const fishes = useFish()
 
-    let fishHTMLrepresentation = ""
+
     for (const fish of fishes) {
         console.log(fish)
         const fishHTML = Fish(fish)
