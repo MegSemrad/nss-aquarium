@@ -3,7 +3,7 @@
 // 2. "List of fish - create HTLM container element & have instructions for rendering the individual fish components for each fish in the collection"
 // Because "components have different responsibilities, then each one must eb created in its own module"
 
-// STEP 3
+// STEP 4
 // Single fish component will be handled in the Fish.js file 
 
 /**
@@ -12,7 +12,7 @@
 export const Fish = (fish) => {
     return `
         <section class="fish card">
-            <div><img  class="fish__image image--card" src="${fish.image}" /></div>
+            <div><img  class="fish__image image--card" src="./images/${fish.image}" /></div>
             <div class="fish__name">${fish.name}</div>
             <div class="fish__species">${fish.species}</div>
             <div class="fish__length">${fish.length}</div>
@@ -21,5 +21,7 @@ export const Fish = (fish) => {
         </section>
     `
 }
+
+// But this modules purpose is to only define what can happen so go to main.js again for STEP 5
 
 // Now go to FishList.js for next step

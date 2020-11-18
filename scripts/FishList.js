@@ -1,4 +1,4 @@
-// STEP 4
+// STEP 6
 // Fish List Component 
 
 
@@ -9,18 +9,24 @@
 
 // TODO: Import `useFish` from the data provider module
 import { useFish } from './FishDataProvider.js'
+import { Fish } from './Fish.js'
 export const FishList = () => {
 
     // Get a reference to the `<article class="content">` element
-    const contentElement = document.querySelector("insert selector here")
+    const contentElement = document.querySelector(".fishList")
     const fishes = useFish()
 
-    // Add to the existing HTML in the content element
-    contentElement.innerHTML += `
-        <article class="fishList">
-            All the fish go here!
-        </article>
-    `
+    let fishHTMLrepresentation = ""
+    for (const fish of fishes) {
+        console.log(fish)
+        const fishHTML = Fish(fish) 
+
+
+        contentElement.innerHTML += fishHTML
+        // <article class="fishList">
+        //     ${fishHTMLrepresentation}
+        // </article>
+    }
 }
 
-// For STEP 5 go back to main.js
+// For STEP 7
