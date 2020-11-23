@@ -17,3 +17,8 @@ const locationCollection = [
 export const useLocation = () => {
     return locationCollection.slice()
 }
+
+/*
+    .slice method will allow for the selection of chunks from an array
+    or if leave () empty will select the entire array
+*/

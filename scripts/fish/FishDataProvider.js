@@ -1,3 +1,7 @@
+/* Data provider modules are responsible for maintaining the state of a particular type of data. 
+So here the state of each fish is held and then exported so other modules can import the 
+info and use it to perform other tasks.*/
+
 const fishCollection = [
     {
         name: "Bart",
